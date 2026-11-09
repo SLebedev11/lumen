@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lumen | Home</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<a href="./index.html" class="header__logo">Lumen</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="./index.html" class="header__nav-link">Home</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="./collection.html" class="header__nav-link"
+								>Collection</a
+							>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">Journal</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#" class="header__nav-link">About</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="hero__overlay"></div>
+			<div class="hero__background"></div>
+
+			<div class="container hero__container">
+				<div class="hero__info">
+					<span class="hero__eyebrow">Featured Movie</span>
+					<h1>John Wick: Chapter 3 - Parabellum</h1>
+					<div class="hero__meta">
+						<span>★ 7.6</span>
+						<span>2019</span>
+						<span>2h 11m</span>
+						<span>R</span>
+					</div>
+					<p>
+						Super-assassin John Wick returns with a $14 million price tag on his
+						head and an army of bounty-hunting killers on his trail. After
+						killing a member of the shadowy international assassin’s guild, the
+						High Table, John Wick is excommunicado, but the world’s most
+						ruthless hit men and women await his every turn.
+					</p>
+				</div>
+				<div class="hero__actions">
+					<button id="trailer-open-btn" class="hero__action-primary btn">
+						Watch Trailer
+					</button>
+					<a href="#" class="hero__action-secondary btn">Movie Details</a>
+				</div>
+			</div>
+
+			<div class="hero__trailer">
+				<button
+					class="hero__close"
+					id="trailer-close-btn"
+					aria-label="Close trailer"
+				>
+					✕
+				</button>
+				<iframe
+					src=""
+					data-src="https://www.youtube.com/embed/M7XM597XO94?si=kbDia0rSXuNVcECK?si=kbDia0rSXuNVcECK&autoplay=1&rel=0"
+					title="Official Trailer"
+					allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+					frameborder="0"
+					allowfullscreen
+				>
+				</iframe>
+			</div>
+
+			<a href="#movie" class="hero__indicator" aria-hidden="true">
+				<span></span>
+			</a>
+		</section>
+		<section class="movie" id="movie">
+			<div class="container movie__container">
+				<picture>
+					<img
+						src="https://image.tmdb.org/t/p/original/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg"
+						alt=""
+						class="movie__poster"
+					/>
+				</picture>
+				<div class="movie__info">
+					<div class="movie__head">
+						<div>
+							<h2 class="movie__name">John Wick: Chapter 3 - Parabellum</h2>
+							<p class="movie__slug">If you want peace, prepare for war.</p>
+						</div>
+						<div class="movie__rating">IMDB ★7.5</div>
+					</div>
+					<ul class="movie__tag-list">
+						<li class="movie__tag"><span>Action</span></li>
+						<li class="movie__tag"><span>Thriller</span></li>
+						<li class="movie__tag"><span>Crime</span></li>
+					</ul>
+					<p class="movie__desc">
+						Super-assassin John Wick returns with a $14 million price tag on his
+						head and an army of bounty-hunting killers on his trail. After
+						killing a member of the shadowy international assassin’s guild, the
+						High Table, John Wick is excommunicado, but the world’s most
+						ruthless hit men and women await his every turn.
+					</p>
+					<ul class="movie__table">
+						<li><span>Director</span><b>Chad Stahelski</b></li>
+						<li><span>Release</span><b>2019</b></li>
+						<li><span>Runtime</span><b>2h 11m</b></li>
+						<li><span>Country</span><b>USA</b></li>
+						<li><span>Language</span><b>English</b></li>
+						<li><span>Budget</span><b>$55,000,000</b></li>
+					</ul>
+					<div class="movie__cast">
+						<h3>Cast</h3>
+						<p class="movie__cast-names">
+							Keanu Reeves &bull; Halle Berry &bull; Ian McShane &bull; Laurence
+							Fishburne
+						</p>
+					</div>
+					<div class="movie__actions">
+						<a href="#" class="movie__action-primary btn">Watch Now</a>
+						<button class="movie__action-secondary btn">Add to Wishlist</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container gallery__container">
+				<h2 class="gallery__title">Featured Scenes</h2>
+				<ul class="gallery__grid">
+					<li>
+						<img
+							src="images/scene-2.jpg"
+							alt="Scene 1"
+							srcset="
+								./images/scene-2-small.jpg  600w,
+								./images/scene-2.jpg       1200w
+							"
+							sizes="(max-width: 768px) 100vw, 66vw"
+						/>
+					</li>
+					<li>
+						<img src="images/scene-1.jpg" alt="Scene 2" />
+					</li>
+					<li>
+						<img src="images/scene-3.jpg" alt="Scene 3" />
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container footer__container">
+				<p>© 2026 Lumen. Educational mini‑project.</p>
+			</div>
+		</footer>
+
+		<script src="./src/js/script.js"></script>
+	</body>
+</html>

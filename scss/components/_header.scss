@@ -1,0 +1,63 @@
+.header {
+	position: absolute;
+	top: 0;
+	inset-inline: 0;
+	z-index: 100;
+
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 0;
+	}
+
+	&__logo {
+		font-weight: 800;
+		font-size: 28px;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+	}
+
+	&__nav{
+		&-list {
+			display: flex;
+			gap: 36px;
+		}
+
+		&-link {
+			opacity: 0.85;
+			transition:
+			color 0.3s ease-out,
+			opacity 0.3s ease-out;
+		}
+
+		&-link:hover {
+			opacity: 1;
+			color: #d4b36b;
+		}	
+	}
+	
+
+
+
+
+	
+
+
+	@media (max-width: 768px) {
+		.header__nav-list {
+			display: none;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
